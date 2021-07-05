@@ -15,8 +15,7 @@ import Formdetails from "./Formdetails"
 
 function App() {
   return (
-    
-      
+
         <Router>
           <AuthProvider>
             <Switch>
@@ -30,8 +29,7 @@ function App() {
 
             </Switch>
           </AuthProvider>
-        </Router>
-    
+        </Router>   
   )
 }
 

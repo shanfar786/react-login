@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { Container } from "react-bootstrap"
+import firebase from 'firebase';
 
 export default function Login() {
   const emailRef = useRef()
@@ -23,12 +24,12 @@ export default function Login() {
     } catch {
       setError("Failed to log in")
     }
-
+    this.state = {user: firebase.auth().currentUser};
     setLoading(false)
   }
-
+  // if (this.state.user){
   return (
-    
+    <>
     <Container
       className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
@@ -61,6 +62,19 @@ export default function Login() {
       </div>
       </div>
       </Container>
-    
-  )
-}
+      </>
+  );
+  }
+
+// else{
+//   return (
+//     <>
+//     <Container
+//       className="d-flex align-items-center justify-content-center"
+//       style={{ minHeight: "100vh" }}
+//     >
+//       </Container>
+//       </>
+//       )
+
+

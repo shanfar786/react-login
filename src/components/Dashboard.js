@@ -23,15 +23,15 @@ export default function Dashboard() {
           <Link to="/formdetails" variant="light">
             Profile Form
           </Link><br />
-          <Link to="/updateprofile" variant="light">
+          <Link to="/update-profile" variant="light">
           Update profile
           </Link><br />
-          <Link to="/Forgotpassword" variant="light">
+          <Link to="/Forgot-password" variant="light">
            Forgot password
           </Link><br />
-          <Link to="/update-profile" variant="light">
+          {/* <Link to="/update-profile" variant="light">
             Update Profile
-          </Link><br />
+          </Link><br /> */}
           <Link to="/AdminPanel" variant="light">
           AdminPanel
           </Link>

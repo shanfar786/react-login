@@ -25,7 +25,7 @@ export default function Header() {
             <Navbar.Brand href="#home">
               Admin Panel
             </Navbar.Brand>
-           <Nav.Link href="#action1">Home</Nav.Link>
+           <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/Formdetails">Form</Nav.Link>
       {/* {error && <Alert variant="danger">{error}</Alert>} */}
       <Nav className="ml-auto">
