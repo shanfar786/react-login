@@ -1,4 +1,4 @@
-import React , { useState } from "react"
+import React , { useState ,loader} from "react"
  import { Form, Button, Card } from "react-bootstrap"
 import { Container } from "react-bootstrap"
 import Header from "./Header"
@@ -6,11 +6,11 @@ import { db } from "../firebase";
 
 
 const Formdetails= () => {
+  
   const [name, setName] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
   const [message, setMessage] = useState("");
-
-  const [loader, setLoader] = useState(false);
+  const [loader,setLoader] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -77,6 +77,6 @@ const Formdetails= () => {
     </Container>
     </>
   );
-};
+}
 
 export default Formdetails;
