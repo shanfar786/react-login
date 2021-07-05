@@ -20,9 +20,9 @@ export default function Dashboard() {
           <h2 className="text-center mb-4">Dashboard</h2>
           
          
-          <Link to="/formdetails" variant="light">
+          {/* <Link to="/formdetails" variant="light">
             Profile Form
-          </Link><br />
+          </Link><br /> */}
           <Link to="/update-profile" variant="light">
           Update profile
           </Link><br />
